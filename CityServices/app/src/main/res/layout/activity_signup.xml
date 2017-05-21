@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff2d2d"
+    tools:context="com.technawabs.cityservices.activities.SignupActivity">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/name_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/dimen_16dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your name"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                android:maxLines="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/mobile_number_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_section"
+            android:layout_marginTop="@dimen/dimen_16dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_16dp"
+                android:hint="Enter your mobile number"
+                android:textColor="#FFFFFF"
+                android:inputType="number"
+                android:maxLines="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobile_number_section"
+            android:paddingTop="@dimen/dimen_16dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your password"
+                android:textColor="#FFFFFF"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/aadhar_section"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40dp"
+            android:paddingTop="@dimen/dimen_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/aadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Upload Aadhar card"
+                android:textColor="#FFFFFF"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_16sp" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/submit"
+            android:layout_width="@dimen/dimen_240dp"
+            android:layout_height="@dimen/dimen_60dp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="@dimen/dimen_80dp"
+            app:cardCornerRadius="@dimen/dimen_8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="130dp"
+            >
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Sign up"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="0dp"
+                android:textSize="@dimen/text_16sp" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:textColor="#FFFFFF"
+            android:text="Already Have Account? Login " />
+
+</RelativeLayout>

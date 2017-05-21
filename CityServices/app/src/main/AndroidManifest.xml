@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.technawabs.cityservices">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo"
+        android:label="MyAirtelShop"
+        android:roundIcon="@mipmap/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDO7hQWUkbmHzwtmOzY-TaPKsCSvffUxDs" />
+
+        <activity android:name=".activities.LoginActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.SignupActivity"/>
+
+        <activity android:name=".activities.UserActivity"/>
+
+        <activity android:name=".activities.ProfileActivity"/>
+
+        <activity android:name=".activities.Share" />
+
+        <activity android:name=".activities.HomeActivity" />
+
+        <activity android:name=".activities.Recharge" />
+
+        <activity android:name=".activities.Usage" />
+
+        <activity android:name=".activities.BillActivity" />
+
+        <activity android:name=".activities.Money" />
+
+        <activity android:name=".activities.Games" />
+
+        <activity android:name=".activities.Tv" />
+
+        <activity android:name=".activities.Wynk"></activity>
+    </application>
+
+</manifest>

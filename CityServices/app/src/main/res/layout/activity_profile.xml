@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.technawabs.cityservices.activities.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/dimen_16dp"
+            android:paddingLeft="@dimen/dimen_16dp"
+            android:paddingRight="@dimen/dimen_16dp"
+            android:paddingStart="@dimen/dimen_16dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <com.technawabs.cityservices.uicomponents.RoundedImageView
+                android:id="@+id/image"
+                android:layout_width="@dimen/dimen_180dp"
+                android:layout_height="@dimen/dimen_180dp"
+                android:layout_centerHorizontal="true">
+
+            </com.technawabs.cityservices.uicomponents.RoundedImageView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image">
+                <!--Name-->
+                <TextView
+                    android:id="@+id/nameHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/nameHead"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+                <!--Account balance-->
+                <TextView
+                    android:id="@+id/accountNumberHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Account Number"
+                    android:textAllCaps="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/accountNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/accountNumberHead"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="4234234242343232"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/addCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/accountNumber"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    app:cardBackgroundColor="#d44a4a"
+                    app:cardCornerRadius="@dimen/dimen_6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/add_c"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dimen_16dp"
+                            android:text="Add balance from card"
+                            android:textSize="@dimen/text_20sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@+id/add_c"
+                            android:padding="@dimen/dimen_16dp"
+                            android:src="@mipmap/ic_credit_card_black" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!--Mobile balance-->
+                <TextView
+                    android:id="@+id/mobileNumberHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/addCard"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Mobile Number"
+                    android:textAllCaps="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/mobileNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mobileNumberHead"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <!--Mobile talktime-->
+                <TextView
+                    android:id="@+id/talktimHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mobileNumber"
+                    android:layout_marginTop="@dimen/dimen_16dp"
+                    android:text="Looking for talktime: "
+                    android:textAllCaps="true"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/text_16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/talktimeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/talktimHead"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:text="Talktime"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <Switch
+                    android:id="@+id/talktimeSwitch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimen_8dp"
+                    android:layout_below="@+id/talktimHead"
+                    />
+
+                <!--&lt;!&ndash;Mobile balance&ndash;&gt;-->
+                <!--<TextView-->
+                    <!--android:id="@+id/mobileNumberHead"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/addCard"-->
+                    <!--android:layout_marginTop="@dimen/dimen_16dp"-->
+                    <!--android:text="Mobile Number"-->
+                    <!--android:textAllCaps="true"-->
+                    <!--android:textColor="@color/red"-->
+                    <!--android:textSize="@dimen/text_16sp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/mobileNumber"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/mobileNumberHead"-->
+                    <!--android:layout_marginTop="@dimen/dimen_8dp"-->
+                    <!--android:text="9871552963"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="24sp" />-->
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
